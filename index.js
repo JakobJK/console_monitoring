@@ -39,7 +39,7 @@ const run = () => {
     })
 }
 
-cron.schedule('* * * * *', () => {
+cron.schedule('*/5 * * * *', () => {
   amountRuns += 1
   run()
 })
