@@ -1,9 +1,9 @@
 const cron = require('node-cron')
 const fs = require('fs')
 
-const gamestop = require('./gamestop')
-const walmart = require('./walmart')
-const target = require('./target')
+const gamestop = require('./stores/gamestop')
+const walmart = require('./stores/walmart')
+const target = require('./stores/target')
 
 let previousCheck = {}
 const changes = []
